@@ -239,7 +239,7 @@ open class MaskedTextChangedListener(
         }
     }
 
-    private fun pickMask(
+    open fun pickMask(
         text: CaretString
     ): Mask {
         if (this.affineFormats.isEmpty()) return this.primaryMask
